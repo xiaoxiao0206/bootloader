@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 486387553@qq.com, 1, LIC=NQQMA-13IHH-DY9V3-A8GM9-UQX66-2S0Q1
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  E:\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      Segger\JL2CM3.dll V2.99.43.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\hal\project\bootloader\loader_bootloader3.0\MDK-ARM\TEXT2.uvprojx
+Project File Date:  04/09/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\keil\ARM\ARMCC\Bin'
+Build target 'TEXT2'
+compiling ota.c...
+..\user\ota.c(808): warning:  #870-D: invalid multibyte character sequence
+      printf("Flash 0x%08lX �? 50 字节:\r\n", (unsigned long)base);
+..\user\ota.c(815): warning:  #870-D: invalid multibyte character sequence
+      printf("Flash 0x%08lX �? 50 字节:\r\n", (unsigned long)(base + len - 50));
+..\user\ota.c(864): warning:  #870-D: invalid multibyte character sequence
+      printf("OTA EEPROM 初始化完�?!\r\n");
+..\user\ota.c(891): warning:  #870-D: invalid multibyte character sequence
+      printf("新固件长�?      : %lu\r\n", (unsigned long)val.NEW_DATA_LEN);
+..\user\ota.c(892): warning:  #870-D: invalid multibyte character sequence
+      printf("旧固件长�?      : %lu\r\n", (unsigned long)val.OLD_DATA_LEN);
+..\user\ota.c(897): warning:  #870-D: invalid multibyte character sequence
+      printf("旧版�?          : %d\r\n", dev.old_version);
+..\user\ota.c(900): warning:  #870-D: invalid multibyte character sequence
+      printf("旧固�? CRC32    : 0x%08X\r\n", (unsigned)crc.OLD_APP_DATA_CRC);
+..\user\ota.c(901): warning:  #870-D: invalid multibyte character sequence
+      printf("新固�? CRC32    : 0x%08X\r\n", (unsigned)crc.NEW_APP_DATA_CRC);
+..\user\ota.c(904): warning:  #870-D: invalid multibyte character sequence
+      printf("4 分区回滚信息�?:\r\n");
+..\user\ota.c: 9 warnings, 0 errors
+linking...
+Program Size: Code=23120 RO-data=532 RW-data=84 ZI-data=38852  
+FromELF: creating hex file...
+"TEXT2\TEXT2.axf" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_TEXT2
+  E:/keil/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  E:/keil/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

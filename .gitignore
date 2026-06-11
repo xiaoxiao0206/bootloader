@@ -1,0 +1,27 @@
+# Keil 编译输出
+MDK-ARM/Objects/
+MDK-ARM/Listings/
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.bin
+*.map
+
+# Keil 个人配置
+*.uvoptx
+*.uvguix.*
+MDK-ARM/DebugConfig/
+
+# 必须保留的工程文件
+!*.uvprojx
+!*.ioc
+
+# 系统垃圾
+Thumbs.db
+.DS_Store
+
+# VS Code 配置
+.vscode/
+.idea/
